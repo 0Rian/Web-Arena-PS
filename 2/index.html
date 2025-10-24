@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arena PS - Gaming & Rental PlayStation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'gaming': ['Orbitron', 'sans-serif'],
+            'sans': ['Inter', 'sans-serif']
+          },
+          colors: {
+            'arena-dark': '#0f172a',
+            'arena-blue': '#3b82f6',
+            'arena-purple': '#9333ea',
+            'arena-gray': '#94a3b8'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-arena-dark text-white font-sans">
+  <!-- NAVBAR -->
+  <header class="bg-gray-900 shadow-lg fixed w-full top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-xl font-gaming text-arena-blue">🎮 Arena PS</h1>
+      <nav class="space-x-6 font-semibold">
+        <a href="index.html" class="hover:text-arena-blue">Beranda</a>
+        <a href="about.html" class="hover:text-arena-blue">Tentang</a>
+        <a href="contact.php" class="hover:text-arena-blue">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="h-screen flex flex-col justify-center items-center bg-cover bg-center text-center" 
+           style="background-image: url('https://images.unsplash.com/photo-1606813902912-f9bb5c0d0a3c?auto=format&fit=crop&w=1950&q=80');">
+    <div class="bg-black/60 w-full h-full absolute top-0 left-0"></div>
+    <div class="relative z-10 px-6">
+      <h2 class="text-5xl md:text-6xl font-gaming mb-4 glow">Selamat Datang di Arena PS</h2>
+      <p class="text-arena-gray text-lg mb-6">Tempat seru untuk bermain, bersantai, dan berkompetisi!</p>
+      <a href="about.html" class="bg-arena-purple px-6 py-3 rounded-full hover:bg-arena-blue font-bold transition">Pelajari Lebih Lanjut</a>
+    </div>
+  </section>
+
+  <!-- FITUR SECTION -->
+  <section class="py-20 bg-gray-950 text-center">
+    <h2 class="text-3xl font-gaming mb-12 text-arena-blue">Fitur Unggulan</h2>
+    <div class="grid md:grid-cols-3 gap-8 px-6">
+      <div class="bg-gray-800 p-6 rounded-xl card-hover fade-in-up">
+        <img src="https://images.unsplash.com/photo-1606811841933-7bff48a8d3e5?auto=format&fit=crop&w=900&q=80" 
+             class="rounded-lg mb-4 mx-auto h-40 object-cover">
+        <h3 class="text-xl font-semibold text-arena-purple">Konsol PS5 Terbaru</h3>
+        <p class="text-arena-gray">Mainkan game terkini dengan grafis super realistis di PS5 kami.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl card-hover fade-in-up">
+        <img src="https://images.unsplash.com/photo-1603484477859-abe6a73f9360?auto=format&fit=crop&w=900&q=80" 
+             class="rounded-lg mb-4 mx-auto h-40 object-cover">
+        <h3 class="text-xl font-semibold text-arena-purple">Virtual Reality</h3>
+        <p class="text-arena-gray">Masuki dunia baru dengan headset VR canggih.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl card-hover fade-in-up">
+        <img src="https://images.unsplash.com/photo-1616443077599-96a6d9b2cf5f?auto=format&fit=crop&w=900&q=80" 
+             class="rounded-lg mb-4 mx-auto h-40 object-cover">
+        <h3 class="text-xl font-semibold text-arena-purple">Turnamen Gaming</h3>
+        <p class="text-arena-gray">Buktikan skillmu dan raih hadiah menarik setiap minggu!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-center py-6">
+    <p class="text-arena-gray">&copy; 2025 Arena PS | Semua Hak Dilindungi</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

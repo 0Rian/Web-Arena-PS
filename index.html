@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arena PS - Gaming & Rental PlayStation</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="bg-[#0f172a] text-white font-sans overflow-x-hidden">
+
+  <!-- HEADER -->
+  <header class="fixed top-0 left-0 w-full bg-[#0f172a]/90 backdrop-blur z-50 shadow-md">
+    <div class="container mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-3xl font-extrabold text-blue-400 font-gaming">🎮 Arena PS</h1>
+      <nav class="hidden md:flex space-x-8">
+        <a href="index.html" class="hover:text-blue-400 transition">Beranda</a>
+        <a href="gallery.html" class="hover:text-blue-400 transition">Galeri</a>
+        <a href="contact.php" class="hover:text-blue-400 transition">Kontak</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden text-blue-400 focus:outline-none">
+        ☰
+      </button>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div id="mobile-menu" class="hidden bg-[#1e293b] text-center py-4 space-y-3">
+      <a href="index.html" class="block hover:text-blue-400">Beranda</a>
+      <a href="gallery.html" class="block hover:text-blue-400">Galeri</a>
+      <a href="contact.php" class="block hover:text-blue-400">Kontak</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative h-screen flex items-center justify-center text-center">
+    <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
+      <source src="https://cdn.pixabay.com/vimeo/345566286/ps-controller-22211.mp4?width=1280&hash=145abc1d6e9a" type="video/mp4">
+    </video>
+    <div class="absolute inset-0 bg-black/70"></div>
+    <div class="relative z-10 px-6">
+      <h1 class="text-5xl md:text-7xl font-gaming text-blue-400 drop-shadow-lg mb-6 animate-fade">
+        Tempat Seru untuk Para Gamer
+      </h1>
+      <p class="text-xl text-gray-300 mb-8 animate-slideup">
+        Nikmati pengalaman gaming terbaik dengan PS5, ruang nyaman, dan suasana kompetitif.
+      </p>
+      <a href="gallery.html" class="bg-purple-600 hover:bg-blue-500 px-8 py-4 rounded-full font-bold text-white transition transform hover:scale-110">
+        Jelajahi Galeri
+      </a>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="py-20 bg-gray-900 text-center">
+    <h2 class="text-4xl font-gaming text-blue-400 mb-12">Layanan Kami</h2>
+    <div class="container mx-auto grid md:grid-cols-3 gap-8 px-6">
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/5972/5972626.png" class="w-20 mx-auto mb-4" alt="">
+        <h3 class="text-xl font-bold mb-2">Rental PS5</h3>
+        <p class="text-gray-400">Mainkan game eksklusif di konsol terbaru dengan kualitas grafis terbaik.</p>
+      </div>
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1011/1011270.png" class="w-20 mx-auto mb-4" alt="">
+        <h3 class="text-xl font-bold mb-2">Turnamen Gaming</h3>
+        <p class="text-gray-400">Buktikan kemampuanmu dan menangkan hadiah keren!</p>
+      </div>
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3081/3081559.png" class="w-20 mx-auto mb-4" alt="">
+        <h3 class="text-xl font-bold mb-2">Snack & Drink</h3>
+        <p class="text-gray-400">Cemilan dan minuman segar tersedia agar gaming makin seru.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-[#0f172a] text-gray-400 text-center py-6">
+    <p>© 2025 Arena PS | Dibuat dengan ❤️ oleh Gamer</p>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

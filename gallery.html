@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri - Arena PS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body class="bg-[#0f172a] text-white font-sans">
+
+<header class="bg-black/90 p-4 text-center text-2xl font-bold text-blue-400">Galeri Arena PS</header>
+
+<main class="container mx-auto py-12 px-6">
+  <h2 class="text-3xl font-gaming text-center text-purple-500 mb-10">Kenangan Seru di Arena PS</h2>
+  
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="gallery">
+    <img src="https://i.ytimg.com/vi/BXQnecQI08w/maxresdefault.jpg" class="rounded-lg hover:scale-110 transition cursor-pointer">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.segS0d0mulgCxLGknQpxEwHaEK?pid=Api&P=0&h=220" class="rounded-lg hover:scale-110 transition cursor-pointer">
+    <img src="https://i.ytimg.com/vi/54d25wG5ku0/maxresdefault.jpg" class="rounded-lg hover:scale-110 transition cursor-pointer">
+    <img src="https://media.karousell.com/media/photos/products/2023/10/19/sewa_rental_ps_ps3_ps4_ps5_tv__1697704191_1b1abba8_progressive.jpg" class="rounded-lg hover:scale-110 transition cursor-pointer">
+  </div>
+
+  <div id="popup" class="hidden fixed inset-0 bg-black/80 z-50 items-center justify-center">
+    <img id="popup-img" class="max-w-4xl rounded-lg shadow-lg">
+  </div>
+</main>
+
+<footer class="text-center text-gray-400 py-6">
+  <a href="index.html" class="text-blue-400 hover:underline">← Kembali ke Beranda</a>
+</footer>
+
+<script>
+$("#gallery img").click(function(){
+  $("#popup-img").attr("src", $(this).attr("src"));
+  $("#popup").fadeIn(300).css("display", "flex");
+});
+$("#popup").click(function(){
+  $(this).fadeOut(300);
+});
+</script>
+
+</body>
+</html>
