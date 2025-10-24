@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -84,3 +85,244 @@
   <script src="assets/app.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Semua tag <head> Anda tetap di sini -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/output.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RV Bakery - Roti & Kue Segar Setiap Hari</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon (opsional) -->
+    <link rel="icon" href="https://placehold.co/32x32/854d0e/ffffff?text=SB" type="image/png">
+
+    <script>
+        // Konfigurasi custom untuk Tailwind CSS
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        'brand-cream': '#FFF7ED',
+                        'brand-brown': {
+                            'light': '#A16207',
+                            'DEFAULT': '#854D0E',
+                            'dark': '#422006'
+                        },
+                        'brand-gray': '#4B5563'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-brand-cream font-sans text-brand-gray">
+
+<!-- ===== 1. Header Section ===== -->
+    <header class="bg-white/80 backdrop-blur-sm sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo/Brand Name -->
+            <a href="#" class="text-2xl font-serif font-bold text-brand-brown-dark">
+                RV Bakery
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-brand-brown transition duration-300">Tentang Kami</a>
+                <a href="/pages/products.html" class="hover:text-brand-brown transition duration-300">Produk</a>
+                <a href="#gallery" class="hover:text-brand-brown transition duration-300">Galeri</a>
+                <a href="#testimonials" class="hover:text-brand-brown transition duration-300">Testimoni</a>
+                <a href="#contact" class="hover:text-brand-brown transition duration-300">Kontak</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-brand-brown-dark focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 space-y-2">
+            <a href="#about" class="block py-2 hover:text-brand-brown transition duration-300">Tentang Kami</a>
+            <a href="/pages/products.html" class="block py-2 hover:text-brand-brown transition duration-300">Produk</a>
+            <a href="#gallery" class="block py-2 hover:text-brand-brown transition duration-300">Galeri</a>
+            <a href="#testimonials" class="block py-2 hover:text-brand-brown transition duration-300">Testimoni</a>
+            <a href="#contact" class="block py-2 hover:text-brand-brown transition duration-300">Kontak</a>
+        </div>
+    </header>
+
+    
+    <!-- ===== 2. Hero Section ===== -->
+     <section class="relative h-[80vh] min-h-[500px] flex items-center justify-center text-center text-white overflow-hidden">
+            <!-- Background Image -->
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1568254183919-78a4f43a2877?q=80&w=1974&auto=format&fit=crop" alt="Latar belakang roti artisan yang lezat" class="w-full h-full object-cover">
+                <!-- Overlay -->
+                <div class="absolute inset-0 bg-black/50"></div>
+            </div>
+            
+            <!-- Hero Content -->
+            <div class="relative z-10 p-6">
+                <h1 class="text-4xl md:text-6xl font-serif font-bold mb-4 leading-tight">Kehangatan dari Oven, <br> Langsung ke Hati Anda</h1>
+                <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">Setiap gigitan adalah cerita. Kami sajikan roti dan kue terbaik yang dibuat dengan cinta dan bahan-bahan pilihan.</p>
+                <!-- CTA Button -->
+                <!-- PERUBAHAN: Mengarahkan ke halaman baru -->
+                <a href="pages/products.html" class="bg-brand-brown hover:bg-brand-brown-light text-white font-bold py-3 px-8 rounded-full text-lg mr-8 transition duration-300 transform hover:scale-105">
+                    Lihat Menu Kami
+                </a>
+                <a href="/pages/contact.php" class="bg-brand-brown  hover:bg-brand-brown-light text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105">
+                    Hubungi Kami
+                </a>
+            </div>
+        </section>
+
+
+    <!-- ===== 3. Section 1: About Us ===== -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+                <!-- Image -->
+                <div class="rounded-lg overflow-hidden shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=1974&auto=format&fit=crop" alt="Interior toko roti RV Bakery yang nyaman" class="w-full h-full object-cover">
+                </div>
+                <!-- Text Content -->
+                <div class="text-center md:text-left">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-brown-dark mb-4">Cerita Kami</h2>
+                    <p class="mb-4 text-justify">RV Bakery dimulai dari dapur rumahan sederhana dengan mimpi besar: menyajikan kebahagiaan melalui roti berkualitas. Sejak 2015, kami berkomitmen menggunakan resep warisan keluarga dan bahan baku lokal terbaik untuk menciptakan produk yang tidak hanya lezat, tapi juga sehat dan penuh kenangan.</p>
+                    <p class="text-justify">Kami percaya bahwa roti yang baik adalah hasil dari kesabaran, keahlian, dan tentu saja, cinta.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 5. Gallery Section -->
+        <!-- ===== 5. Section 3: Portfolio/Gallery (Our Creations) ===== -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-brown-dark mb-4">Galeri Kreasi Kami</h2>
+                <p class="max-w-2xl mx-auto">Momen-momen manis yang berhasil kami ciptakan untuk pelanggan setia.</p>
+            </div>
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="grid gap-4">
+                    <!-- Perbaikan Path: \ diubah menjadi / -->
+                    <div><img class="h-full w-full rounded-lg shadow-md object-cover" src="src foto/Tawa Roti.jpeg" alt="Roti Canail"></div>
+                    <div><img class="h-full w-full rounded-lg shadow-md object-cover" src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?q=80&w=1964&auto=format&fit=crop" alt="Aneka Pastry"></div>
+                </div>
+                <div class="grid gap-4">
+                    <!-- Perbaikan Path: \ diubah menjadi / -->
+                    <div><img class="h-full w-full rounded-lg shadow-md object-cover" src="src foto/pexels-catscoming-1118332.jpg" alt="Danish pastry"></div>
+                    <div><img class="h-full w-full rounded-lg shadow-md object-cover" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1987&auto=format&fit=crop" alt="Kue Ulang Tahun"></div>
+                </div>
+                <div class="grid gap-4">
+                    <div><img class="h-full w-full rounded-lg shadow-md object-cover" src="https://images.unsplash.com/photo-1587668178277-295251f900ce?q=80&w=1974&auto=format&fit=crop" alt="Aneka Cupcake"></div>
+                    <div><img class="h-full w-full rounded-lg shadow-md object-cover" src="https://i.pinimg.com/1200x/7e/d8/5e/7ed85e3fc962d1dce13b0fad7d87b190.jpg" alt="Donat"></div>
+                </div>
+                <div class="grid gap-4">
+                    <div><img class="h-full w-full rounded-lg shadow-md object-cover" src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1974&auto=format&fit=crop" alt="Roti Tawar"></div>
+                    <!-- Perbaikan Path: \ diubah menjadi / -->
+                    <div><img class="h-full w-full rounded-lg shadow-md object-cover" src="src foto/Coffee Buns (Roti Boy).jpeg" alt="Roti Boy"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+      
+    <!-- ===== 6. Section 4: Testimonials ===== -->
+    <section id="testimonials" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-brown-dark mb-4">Kata Pelanggan Kami</h2>
+                <p class="max-w-2xl mx-auto">Kami senang bisa menjadi bagian dari hari-hari spesial mereka.</p>
+            </div>
+            
+            <!-- Testimonials -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <p class="italic mb-4">"Sourdough-nya terbaik di kota! Rasanya otentik dan selalu fresh. Tempatnya juga nyaman sekali untuk bersantai sore."</p>
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/50x50/A16207/FFFFFF?text=A" alt="Foto profil pelanggan" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-bold text-brand-brown-dark">Andini Putri</p>
+                            <p class="text-sm">Pecinta Roti</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <p class="italic mb-4">"Pesan kue ulang tahun untuk anak saya di sini dan hasilnya luar biasa! Cantik dan rasanya enak banget. Anak-anak suka!"</p>
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/50x50/A16207/FFFFFF?text=B" alt="Foto profil pelanggan" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-bold text-brand-brown-dark">Budi Santoso</p>
+                            <p class="text-sm">Ayah & Pelanggan Setia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ===== 7. Section 5: Contact ===== -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-brown-dark mb-4">Kunjungi Kami</h2>
+            <p class="max-w-2xl mx-auto mb-8">Kami siap menyambut Anda dengan aroma roti segar. Hubungi kami untuk pesanan khusus atau sekadar mampir untuk menyapa.</p>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-12">
+                <div>
+                    <h3 class="font-bold text-lg text-brand-brown-dark">Alamat</h3>
+                    <p>Jl. Teratai No.30A Dadaprejo, Kec. Junrejo, Kota Batu, Jawa Timur</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-brand-brown-dark">Jam Buka</h3>
+                    <p>Setiap Hari, 08:00 - 20:00</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-brand-brown-dark">Telepon</h3>
+                    <p>+62-858-0404-9637</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===== 8. Footer ===== -->
+    <footer class="bg-brand-brown-dark text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 RV Bakery. Dibuat dengan ❤.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+>>>>>>> 718b372e26fb2b518c5538b4a6007a56e3bda5fc

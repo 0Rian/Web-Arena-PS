@@ -1,0 +1,168 @@
+<!-- ===== 4. Section 2: Products/Services ===== -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Semua tag <head> Anda tetap di sini -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/output.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RV Bakery - Roti & Kue Segar Setiap Hari</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon (opsional) -->
+    <link rel="icon" href="https://placehold.co/32x32/854d0e/ffffff?text=SB" type="image/png">
+
+    <script>
+        // Konfigurasi custom untuk Tailwind CSS
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        'brand-cream': '#FFF7ED',
+                        'brand-brown': {
+                            'light': '#A16207',
+                            'DEFAULT': '#854D0E',
+                            'dark': '#422006'
+                        },
+                        'brand-gray': '#4B5563'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-brand-cream font-sans text-brand-gray">
+
+    <!-- Kontainer ini akan diisi oleh JavaScript -->
+
+    <!-- 1. Header Section -->
+    <div id="header-container"></div>
+
+    <main>
+        <!-- 2. Hero Section -->
+        <div id="hero-container"></div>
+
+        <!-- 3. About Us Section -->
+        <div id="about-container"></div>
+
+        <!-- 4. Products Section -->
+        <div id="products-container"></div>
+
+        <!-- 5. Gallery Section -->
+        <div id="gallery-container"></div>
+
+        <!-- 6. Testimonials Section -->
+        <div id="testimonials-container"></div>
+
+        <!-- 7. Contact Section -->
+        <div id="contact-container"></div>
+    </main>
+
+    <!-- 8. Footer Section -->
+    <div id="footer-container"></div>
+
+
+    <!-- SKRIP UNTUK MEMUAT BAGIAN-BAGIAN -->
+    <!-- Menautkan ke file JavaScript eksternal -->
+    <script src="js/main.js" defer></script>
+
+</body>
+</html>
+<!-- ===== 1. Header Section ===== -->
+<header class="bg-white/80 backdrop-blur-sm sticky top-0 z-50 shadow-md">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <!-- Logo/Brand Name -->
+        <a href="#" class="text-2xl font-serif font-bold text-brand-brown-dark">
+            RV Bakery
+        </a>
+        
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-8">
+            <a href="/index.html#about" class="hover:text-brand-brown transition duration-300">Tentang Kami</a>
+            <a href="/pages/products.html" class="hover:text-brand-brown transition duration-300">Produk</a>
+            <a href="/index.html#gallery" class="hover:text-brand-brown transition duration-300">Galeri</a>
+            <a href="/index.html#testimonials" class="hover:text-brand-brown transition duration-300">Testimoni</a>
+            <a href="/index.html#contact" class="hover:text-brand-brown transition duration-300">Kontak</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+            <button id="menu-btn" class="text-brand-brown-dark focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 space-y-2">
+        <a href="/index.html#about" class="block py-2 hover:text-brand-brown transition duration-300">Tentang Kami</a>
+        <a href="/pages/products.html" class="block py-2 hover:text-brand-brown transition duration-300">Produk</a>
+        <a href="/index.html#gallery" class="block py-2 hover:text-brand-brown transition duration-300">Galeri</a>
+        <a href="/index.html#testimonials" class="block py-2 hover:text-brand-brown transition duration-300">Testimoni</a>
+        <a href="/index.html#contact" class="block py-2 hover:text-brand-brown transition duration-300">Kontak</a>
+    </div>
+</header>
+
+
+<section id="products" class="py-20">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-brown-dark mb-4">Spesial dari Oven Kami</h2>
+            <p class="max-w-2xl mx-auto">Dari roti klasik hingga kreasi kue modern, temukan favorit Anda di sini.</p>
+        </div>
+        
+        <!-- Products Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Product Card 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                <!-- Perbaikan Path: \ diubah menjadi / -->
+                <img src="/src foto/4e16d2da-b6e7-468b-89c3-0b40ba7c2573.jpeg" alt="Roti Sourdough" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-brand-brown-dark mb-2">Artisan Sourdough</h3>
+                    <p class="text-sm">Roti dengan fermentasi alami yang menghasilkan tekstur renyah di luar dan lembut di dalam. Sempurna untuk sarapan.</p>
+                </div>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                <!-- Perbaikan Path: \ diubah menjadi / -->
+                <img src="/src foto/Indulge in the irresistible aroma and taste of….jpeg" alt="Croissant" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-brand-brown-dark mb-2">Butter Croissant</h3>
+                    <p class="text-sm">Lapisan pastry yang renyah dan gurih, dibuat dengan mentega pilihan. Nikmati kelembutannya di setiap gigitan.</p>
+                </div>
+            </div>
+            <!-- Product Card 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                <!-- Perbaikan Path: \ diubah menjadi / -->
+                <img src="/src foto/Red Velvet Cheesecake Cake  Ingredients_  _ Red….jpeg" alt="Kue Red Velvet" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-brand-brown-dark mb-2">Red Velvet Cake</h3>
+                    <p class="text-sm">Kue klasik dengan warna merah yang menggoda, dilapisi dengan cream cheese frosting yang lembut dan lezat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <script src="js/main.js"></script>
